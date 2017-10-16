@@ -1,0 +1,67 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- <button type="button" id="sidebarCollapse" class="navbar-btn" [ngClass]="{active: isActive}" (click)="isActive=!isActive;"> -->
+    <!-- <button type="button" id="sidebarCollapse" class="navbar-btn" [ngClass]="{'active': isActive === 1}" (click)="sbToggle(1)"> -->
+    <!-- <span></span>
+      <span></span>
+      <span></span>
+    </button> -->
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="main-home"><i class="fa fa-home" aria-hidden="true"></i> Main</a></li>
+
+        <li class="dropdown">
+          <div class="navbar-form">
+            <div class="btn-group">
+              <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span>알림 </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">공감&와썹<span class="w3-badge w3-right w3-minimall w3-lightgreen">2</span></a></li>
+                <li><a href="#">친구 요청&수락<span class="w3-badge w3-right w3-minimall w3-lightgreen">1</span></a></li>
+                <li><a href="#">최근 Hot한 소식</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <form class="navbar-form">
+            <div class="btn-group">
+              <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-weixin" aria-hidden="true"></i><span class="w3-badge w3-right w3-small w3-green">2</span> 채팅</button>
+              <ul class="dropdown-menu">
+                <li><a href="#">송정수님 <span class="w3-badge w3-right w3-minimall w3-lightgreen">1</span></a></li>
+                <li><a href="#">김익현님</a></li>
+                <li><a href="#">김남교님 <span class="w3-badge w3-right w3-minimall w3-lightgreen">1</span></a></li>
+              </ul>
+            </div>
+          </form>
+        </li>
+
+        <li class="dropdown">
+          <form class="navbar-form">
+            <div class="btn-group">
+              <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-book" aria-hidden="true"></i> 스케치북</button>
+              <ul class="dropdown-menu">
+                <li><a href="#">내가이렇게잘먹는다</a></li>
+                <li><a href="#">내가이렇게잘살고있다</a></li>
+                <li><a href="#">내가이렇게돌아이다</a></li>
+              </ul>
+            </div>
+          </form>
+        </li>
+
+        <li><a href="#search" data-toggle="modal"><i class="fa fa-search" aria-hidden="true"></i> 검색</a></li>
+        <!-- <li><a href="#login-modal" data-toggle="modal"><i class="fa fa-power-off" aria-hidden="true"></i> 접속</a></li> -->
+        <li (click)="logout()"><a href="" ><i class="fa fa-power-off" aria-hidden="true"></i> 로그아웃</a></li>
+      </ul>
+    </div>
+    <!-- <ul class="nav navbar-nav navbar-right">
+      <li><a href="main-home"><i class="fa fa-home" aria-hidden="true"></i> Main</a></li>
+      <li><a href="#"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span> 알림</a></li>
+      <li><a href="#"><i class="fa fa-weixin" aria-hidden="true"></i><span class="w3-badge w3-right w3-small w3-green">2</span> 채팅</a></li>
+      <li><a href="#" data-toggle="modal"><i class="fa fa-book" aria-hidden="true"></i> 스케치북</a></li>
+      <li><a href="#search" data-toggle="modal"><i class="fa fa-search" aria-hidden="true"></i> 검색</a></li>
+      <li><a href="#login-modal" data-toggle="modal"><i class="fa fa-power-off" aria-hidden="true"></i> 접속</a></li>
+    </ul> -->
+  </div>
+</nav>

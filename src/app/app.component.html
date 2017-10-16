@@ -1,0 +1,23 @@
+<div class="body" *ngIf="isLogin">
+  <!-- Login Complete Main View  -->
+    <div class="wrapper">
+      <app-sidebar></app-sidebar>
+
+      <div id="content">
+        <div class="">
+          <app-topbar></app-topbar>
+        </div>
+
+        <div class="">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+
+  </div>
+  <!-- Login Default Main View -->
+  <app-login-modal></app-login-modal> <!-- 어느 화면에서던 항상 고정 -->
+  <app-search-modal></app-search-modal><!-- 어느 화면에서던 항상 고정 -->
+</div>
+<div class="" *ngIf="!isLogin">
+  <app-intro-page></app-intro-page>
+</div>

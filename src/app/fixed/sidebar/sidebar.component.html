@@ -1,0 +1,63 @@
+<nav id="sidebar">
+  <div class="sidebar-header" [ngClass]="{active: isActive}">
+  <!-- <div class="sidebar-header" [ngClass]="{'active': isActive === 1}" (click)="sbActive(1)"> -->
+    <h2>SeeYA</h2>
+  </div>
+
+  <ul class="list-unstyled components">
+    <p><strong>{{loginMember.nickname}}</strong> 님의 미니홈피 관리</p>
+
+    <li class="active" [ngClass]="{active: isActive}">
+      <a href="#myAcccount" data-toggle="collapse" aria-expanded="false"><span class="caret"></span> My계정 <i class="fa fa-user"></i> </a>
+      <ul class="collapse list-unstyled" id="myAcccount">
+        <li><a href="profile-page">프로필 관리</a></li>
+        <li><a href="user-list">친구목록</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="#newNewsPeed" data-toggle="collapse" aria-expanded="false"><span class="caret"></span><span class="w3-badge w3-right w3-small w3-green">3</span> 오늘 도착한 소식 <i class="fa fa-bell"></i></a>
+      <ul class="collapse list-unstyled" id="newNewsPeed">
+        <li><a href="#">공감&와썹<span class="w3-badge w3-right w3-minimall w3-lightgreen">2</span></a></li>
+        <li><a href="#">친구 요청&수락<span class="w3-badge w3-right w3-minimall w3-lightgreen">1</span></a></li>
+        <li><a href="#">최근 Hot한 소식</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="#chatting" data-toggle="collapse" aria-expanded="false"><span class="caret"></span><span class="w3-badge w3-right w3-small w3-green">2</span> 채팅 <i class="fa fa-weixin" aria-hidden="true"></i></a>
+      <ul class="collapse list-unstyled" id="chatting">
+        <li><a href="#">송정수님 <span class="w3-badge w3-right w3-minimall w3-lightgreen">1</span></a></li>
+        <li><a href="#">김익현님</a></li>
+        <li><a href="#">김남교님 <span class="w3-badge w3-right w3-minimall w3-lightgreen">1</span></a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><span class="caret"></span> 스케치북 <i class="fa fa-book" aria-hidden="true"></i></a>
+      <ul class="collapse list-unstyled" id="pageSubmenu">
+        <li><a href="#">내가이렇게잘먹는다</a></li>
+        <li><a href="#">내가이렇게잘살고있다</a></li>
+        <li><a href="board">내가이렇게돌아이다</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="#croup" data-toggle="collapse" aria-expanded="false"><span class="caret"></span> 활동 그룹 <i class="fa fa-users" aria-hidden="true"></i></a>
+      <ul class="collapse list-unstyled" id="croup">
+        <li><a href="#">자.스.모 - 고양시</a></li>
+        <li><a href="#">우리동네 호.즐.메 - 고양시</a></li>
+        <li><a href="#">맛.살.안 - 고양시</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="#">SeeYA 공지사항</a>
+    </li>
+
+  </ul>
+
+  <ul class="list-unstyled CTAs">
+    <li (click)="logout()"><a href="#login-modal" class="article" data-toggle="modal"><i class="fa fa-power-off" aria-hidden="true"></i> 로그아웃</a></li>
+  </ul>
+</nav>

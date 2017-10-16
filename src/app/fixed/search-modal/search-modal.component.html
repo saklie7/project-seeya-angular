@@ -1,0 +1,53 @@
+<div class="modal fade" id="search" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="col-md-30">
+          <div class="input-group" id="adv-search">
+            <input type="text" class="form-control" placeholder="검색 키워드를 입력해주세요." />
+            <div class="input-group-btn">
+              <div class="btn-group" role="group">
+                <div class="dropdown dropdown-lg">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                  <div class="dropdown-menu dropdown-menu-right" role="menu">
+                    <form class="form-horizontal" role="form">
+                      <div class="form-group">
+                        <label for="filter">검색조건</label>
+                        <select class="form-control">
+                          <option value="0" selected>게시글 검색</option>
+                          <option value="1">그룹검색</option>
+                          <option value="2">친구검색</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="contain">메인 키워드</label>
+                        <input class="form-control" type="text" placeholder="메인 키워드 입력" />
+                      </div>
+                      <div class="form-group">
+                        <label for="contain">상세 키워드</label>
+                        <input class="form-control" type="text" placeholder="상세 키워드 입력" />
+                      </div>
+                      <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </form>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <br>
+      </div>
+    </div>
+
+  </div>
+</div>
